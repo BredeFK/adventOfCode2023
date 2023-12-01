@@ -6,7 +6,7 @@ import java.io.File
 object Task0 {
 
     fun getAnswerForTask0() {
-        val fileName = FileUtil.getTaskFile(0)
+        val fileName = FileUtil.getTaskFile("0")
 
         val lines: List<String> = File(fileName).readLines()
         var sum = 0
