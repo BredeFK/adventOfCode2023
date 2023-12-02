@@ -8,10 +8,11 @@ object Task2 {
     private const val MAX_BLUE_CUBES = 14
 
     fun getAnswerForTask2() {
-        partOne()
+        part(1)
+        part(2)
     }
 
-    private fun partOne() {
+    private fun part(part: Int) {
         val file = getTaskFile("2-1")
         val lines: List<String> = file.readLines()
 
@@ -38,15 +39,15 @@ object Task2 {
                         blues.add(color.replace("blue", "").trim().toInt())
                 }
             }
-            if (maxValueOrZero(reds) <= MAX_RED_CUBES &&
-                    maxValueOrZero(greens) <= MAX_GREEN_CUBES &&
-                    maxValueOrZero(blues) <= MAX_BLUE_CUBES) {
+            if (part == 1
+                    && reds.max() <= MAX_RED_CUBES && greens.max() <= MAX_GREEN_CUBES && blues.max() <= MAX_BLUE_CUBES) {
                 possibleGames.add(splitLines[0].replace("Game ", "").toInt())
+            } else if (part == 2) {
+                possibleGames.add(reds.max() * greens.max() * blues.max())
             }
         }
 
-        //possibleGames.forEach { println(it) }
-        println("Answer to 2.1 is ${possibleGames.sum()}")
+        println("Answer to 2.$part is ${possibleGames.sum()}")
     }
 
     private fun maxValueOrZero(list: List<Int>): Int {

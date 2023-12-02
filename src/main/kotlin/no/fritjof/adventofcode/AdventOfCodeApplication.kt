@@ -10,5 +10,5 @@ class AdventOfCodeApplication
 fun main(args: Array<String>) {
     runApplication<AdventOfCodeApplication>(*args)
     // getAnswerForTask1() // ⭐⭐
-    getAnswerForTask2()
+    getAnswerForTask2() // ⭐⭐
 }

@@ -7,3 +7,4 @@ https://adventofcode.com/
 ## Tasks
 
 1. ⭐⭐
+2. ⭐⭐
