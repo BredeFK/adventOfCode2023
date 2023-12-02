@@ -1,6 +1,6 @@
 package no.fritjof.adventofcode.tasks
 
-import no.fritjof.adventofcode.util.FileUtil.getTaskFile
+import no.fritjof.adventofcode.util.FileUtil.getTaskFileName
 import java.io.File
 
 object Task1 {
@@ -11,7 +11,7 @@ object Task1 {
     }
 
     private fun partOne() {
-        val fileName = getTaskFile("1-1")
+        val fileName = getTaskFileName("1-1")
         val lines: List<String> = File(fileName).readLines()
         val numbers: MutableList<Int> = mutableListOf()
         for (line: String in lines) {
@@ -40,7 +40,7 @@ object Task1 {
         val stringNumbers = listOf(
             "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"
         )
-        val fileName = getTaskFile("1-2")
+        val fileName = getTaskFileName("1-2")
         val lines: List<String> = File(fileName).readLines()
         val numbers: MutableList<Int> = mutableListOf()
         for (line: String in lines) {
