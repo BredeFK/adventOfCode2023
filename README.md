@@ -8,3 +8,6 @@ https://adventofcode.com/
 
 1. ⭐⭐
 2. ⭐⭐
+3. ⭐⭐ [Hardest one so far]
+4. ...
+5. ...
