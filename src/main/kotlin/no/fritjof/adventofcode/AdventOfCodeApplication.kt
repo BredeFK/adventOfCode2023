@@ -1,7 +1,6 @@
 package no.fritjof.adventofcode
 
-import no.fritjof.adventofcode.tasks.Task2.getAnswerForTask2
-import no.fritjof.adventofcode.tasks.Task3.getAnswerForTask3
+import no.fritjof.adventofcode.tasks.Task4.getAnswerForTask4
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
@@ -12,5 +11,6 @@ fun main(args: Array<String>) {
     runApplication<AdventOfCodeApplication>(*args)
     // getAnswerForTask1() // ⭐⭐
     // getAnswerForTask2() // ⭐⭐
-    getAnswerForTask3()
+    // getAnswerForTask3() // ⭐⭐
+    getAnswerForTask4() // ⭐
 }
